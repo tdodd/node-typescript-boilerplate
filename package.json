@@ -30,27 +30,24 @@
     "build": "tsc -p tsconfig-prod.json",
     "build:dev": "tsc -w -p tsconfig-dev.json",
     "launch:prod": "node release/index.js",
-    "ci": "npm run build && npm run lint && npm run test:coverage"
+    "ci": "npm run lint && npm run build && npm run test:coverage"
   },
   "devDependencies": {
     "@types/chai": "^4.2.11",
     "@types/express": "^4.17.3",
     "@types/mocha": "^7.0.2",
     "@types/node": "^13.9.2",
+    "@typescript-eslint/eslint-plugin": "^2.24.0",
+    "@typescript-eslint/parser": "^2.24.0",
     "chai": "^4.2.0",
     "eslint": "^6.8.0",
-    "eslint-config-airbnb": "^18.1.0",
+    "eslint-config-airbnb-base": "^14.1.0",
     "eslint-plugin-import": "^2.20.1",
-    "eslint-plugin-jsx-a11y": "^6.2.3",
-    "eslint-plugin-react": "^7.19.0",
-    "eslint-plugin-react-hooks": "^2.5.0",
     "mocha": "^7.1.1",
     "nyc": "^15.0.0",
     "typescript": "^3.8.3"
   },
   "dependencies": {
-    "@typescript-eslint/eslint-plugin": "^2.24.0",
-    "@typescript-eslint/parser": "^2.24.0",
     "express": "^4.17.1",
     "underscore": "^1.9.2"
   }
