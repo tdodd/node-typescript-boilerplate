@@ -1,9 +1,13 @@
+# npm dependencies
 node_modules
 
+# Compiled output
 dist
 release
 
+# Ignore lockfile for now
 package-lock.json
 
+# Test coverage files
 .nyc_output
 coverage

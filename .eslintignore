@@ -1,4 +1,6 @@
+# Build output
 release
 dist
 
+# Test files
 test

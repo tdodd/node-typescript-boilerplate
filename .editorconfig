@@ -1,7 +1,6 @@
-# top-most EditorConfig file
 root = true
 
-# For all files
+# Rules for all files
 [*]
 charset = utf-8
 
