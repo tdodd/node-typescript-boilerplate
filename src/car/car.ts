@@ -10,10 +10,14 @@ export default class Car implements ICar {
     private make: string;
     private model: string;
     private year: number;
-    private turbo?: boolean;
+    private turbo = false;
 
     public setTurbo(val: boolean) {
         this.turbo = val;
+    }
+
+    public hasTurbo() {
+        return this.turbo;
     }
 
     public display(): string {

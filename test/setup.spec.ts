@@ -1,5 +1,10 @@
+import TestUtils from "./test-utils";
+
 before(function () {
     // Intercept all console.log calls
-    // Uncomment this to see log output
-    console.log = () => {};
+    console.log = (...data) => TestUtils.appendLogs(data)
+});
+
+afterEach(function () {
+    TestUtils.clearLogs();
 });

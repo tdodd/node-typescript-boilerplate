@@ -24,13 +24,13 @@
     },
     "homepage": "https://github.com/tdodd/node-typescript-boilerplate#readme",
     "scripts": {
-        "test": "mocha --forbid-only -t 1000 'dist/test/**/*.spec.js'",
-        "test:coverage": "nyc npm test",
+        "test:unit": "mocha --forbid-only -t 1000 'dist/test/**/*.spec.js'",
+        "test:unit:coverage": "nyc npm run test:unit",
         "lint": "eslint 'src/**/*.ts'",
         "build": "tsc -p tsconfig-prod.json",
         "build:dev": "tsc -w -p tsconfig-dev.json",
         "launch:prod": "node release/index.js",
-        "ci": "npm run lint && npm run build && npm run test:coverage"
+        "ci": "npm run lint && npm run build && npm run test:unit:coverage"
     },
     "devDependencies": {
         "@types/chai": "^4.2.11",
